@@ -140,16 +140,6 @@ const App = () => {
               handleSubmit={handleLogin}
             />
         </Togglable>
-        <Togglable buttonLabel='test'>
-          <LoginForm
-              username={username}
-              password={password}
-              handleUsernameChange={({ target }) => setUsername(target.value)}
-              handlePasswordChange={({ target }) => setPassword(target.value)}
-              handleSubmit={handleLogin}
-            />
-        </Togglable>
-        
       </div>
     )
   }
@@ -185,26 +175,6 @@ const App = () => {
       }
     </div>
   )
-
-  /*<div>
-          <p>{user.name} logged-in</p>
-          {noteForm()}
-      </div>
-      <div>
-        <button onClick={() => setShowAll(!showAll)}>
-          show {showAll ? 'important' : 'all'}
-        </button>
-      </div>
-      <ul>
-        {notesToShow.map(note => 
-          <Note 
-            key={note.id} 
-            note={note} 
-            toggleImportance={() => toggleImportance(note.id)}/>
-        )}
-      </ul>
-      
-      <Footer />*/
 }
 
 export default App 
